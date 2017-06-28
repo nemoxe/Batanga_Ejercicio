@@ -4,7 +4,7 @@ Para la primer parte de la prueba, se encuentra el script "test_query.py"
 
 Para la segunda prueba:
 
-Al ejecutar "vagrant up" se crean los 3 equipos pedidos en el ejericio con la aplicacion Sample-App funcionando.
+Al ejecutar "vagrant up" se crean los 3 equipos pedidos en el ejercicio con la aplicacion Sample-App funcionando.
 Se forwardea el puerto 3000 del equipo guest al puerto 80 de la vm nginx.devops.com para que se pueda ver que
 sample-app esta funcionando, para esto ingresamos a http://127.0.0.1:3000
 
