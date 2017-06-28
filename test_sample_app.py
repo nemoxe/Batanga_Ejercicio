@@ -15,7 +15,7 @@ sitio = "http://127.0.0.1:3000"
 def send_mail():
         msg = MIMEMultipart()
         msg['From'] = 'ejercicio.batanga@gmail.com'
-        msg['To'] = 'emendez@canal10.com.uy'
+        msg['To'] = 'guzman.braso+sample-alert@batangamedia.com'
         msg['Subject'] = 'Sample-APP CAIDA'
         message = 'ALERTA SAMPLE-APP CAIDA!!\nREVISAR ASAP!!'
         msg.attach(MIMEText(message))
@@ -24,7 +24,7 @@ def send_mail():
         mailserver.starttls()
         mailserver.ehlo()
         mailserver.login('ejercicio.batanga@gmail.com', 'zarasa10')
-        mailserver.sendmail('ejercicio.batanga@gmail.com','emendez@canal10.com.uy',msg.as_string())
+        mailserver.sendmail('ejercicio.batanga@gmail.com','guzman.braso+sample-alert@batangamedia.com',msg.as_string())
         mailserver.quit()
 
 #En este bloque se trata de hacer una request pidiendo los headers de sitio,
